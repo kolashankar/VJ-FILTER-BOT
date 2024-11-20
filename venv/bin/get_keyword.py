@@ -1,4 +1,4 @@
-#!/home/xplore/VJ-FILTER-BOT/venv/bin/python3
+#!/home/xplore/VJ-FILTER-BOT/venv/bin/python3.10
 # -*- coding: utf-8 -*-
 """
 get_keyword.py
