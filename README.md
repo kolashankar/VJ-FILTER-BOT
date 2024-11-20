@@ -189,7 +189,7 @@ Edit info.py with variables as given below then run bot
 
 ## Note 🏷️
  
-[![Contact Developer](https://img.shields.io/static/v1?label=Contact+Developer&message=On+Telegram&color=critical)](https://telegram.me/@Shankar_Kola) 
+[![Contact Developer](https://img.shields.io/static/v1?label=Contact+Developer&message=On+Telegram&color=critical)](https://telegram.me/shankar_kola) 
 
 <b>Fork The Repo And Edit As Per Your Needs.</b>
 
