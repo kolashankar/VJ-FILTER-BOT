@@ -1107,6 +1107,10 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
                 
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
+    try:
+        link = await client.create_chat_invite_link(int(REQST_CHANNEL))
+    except:
+        pass
     if query.data == "close_data":
         await query.message.delete()
     elif query.data == "get_trail":
@@ -1957,18 +1961,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🚀 Fast Download 🚀", url=download),  # we download Link
                                                     InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream)]])  # web stream Link
             )
-            button = [[
-                InlineKeyboardButton("🚀 Fast Download 🚀", url=download),
-                InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream)
-            ],[
-                InlineKeyboardButton("• ᴡᴀᴛᴄʜ ɪɴ ᴡᴇʙ ᴀᴘᴘ •", web_app=WebAppInfo(url=stream))
-            ]]
             await query.message.reply_text(
                 text="•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ☠︎⚔",
                 quote=True,
                 disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup(button)
+                reply_markup=InlineKeyboardMarkup([[
+                InlineKeyboardButton("🚀 Fast Download 🚀", url=download),
+                InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream)
+            ],[
+                InlineKeyboardButton("• ᴡᴀᴛᴄʜ ɪɴ ᴡᴇʙ ᴀᴘᴘ •", web_app=WebAppInfo(url=stream))
+            ]])
             )
+            
         except Exception as e:
             print(e)  # print the error message
             await query.answer(f"☣something went wrong sweetheart\n\n{e}", show_alert=True)
