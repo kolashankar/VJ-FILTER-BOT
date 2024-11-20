@@ -1,6 +1,6 @@
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+# Don't Remove Credit @Shankar_Kola
+# Subscribe YouTube Channel For Amazing Bot @achievers_base
+# Ask Doubt on telegram @Time2ChillBot
 
 
 import logging
@@ -35,7 +35,7 @@ async def git(bot, message):
 
 <b>Open Issues :</b> <i>{qw.get("open_issues")}</i>
 
-<b>Powered by :</b> @VJ_Botz
+<b>Powered by :</b> @Shankar_Kola
 
 """
         if qw.get("description"):
