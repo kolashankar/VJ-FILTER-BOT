@@ -85,7 +85,7 @@ CLONE_DATABASE_URI = environ.get('CLONE_DATABASE_URI', "mongodb+srv://shankar113
 PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', 'publicchanneltime2chill') # Public Channel Username Without @ or without https://t.me/ and Bot Is Admin With Full Right.
 
 # Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/chillbot_movies')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/chillbot_movie')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+nsKuewNAKQtkMGJl')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/how_to_open_link_time2chill')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'time2chill_discussion') # Support Chat Link Without https:// or @
